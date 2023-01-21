@@ -1,0 +1,14 @@
+<section>
+    <div class="container main">
+        <h1 class="display-2">BMW i4 trims</h1>
+        <div class="row">
+            <div class="col-sm-4" *ngFor="let img of imgArr">
+              <div class="card shadow p-3 mb-5 bg-white">
+                <div class="card-body">
+                  <img [src]="img" class="img-class-trim"/>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
