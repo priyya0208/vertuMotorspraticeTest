@@ -1,10 +1,13 @@
 img {
-    content: url("../../assets/logo_copy.png");
+    content: url("../../assets/logo2.png");
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
-    opacity: 1; /* Firefox */
-  }
+    opacity: 1;
+    /* Firefox */
+}
 
 body {
     background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
@@ -26,12 +29,6 @@ body {
     box-sizing: border-box;
 }
 
-code {
-    background: #fff;
-    padding: 0.2rem;
-    border-radius: 0.2rem;
-    margin: 0 0.3rem;
-}
 
 ul {
     list-style: none;
@@ -83,38 +80,26 @@ li a {
     font-size: small;
 }
 
-.has-search {
-    padding-left: 4rem;
-    width: 27rem
-}
-
-.has-search .form-control {
-    padding-left: 2.375rem;
-    border-radius: 3rem;
-    background-color: #EBEBEB;
-
-}
-
-.has-search .form-control-feedback {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
-}
-
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 375px) {
     .logo {
-        max-width: 1.2rem;
-        // max-height: 10px;
+        max-width: 0.2rem;
     }
+
     img {
         content: url("../../assets/logo.png");
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-sm,
+    .navbar>.container-md,
+    .navbar>.container-lg,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: initial;
+
     }
 
     .icon-right-header ul {
@@ -122,15 +107,15 @@ li a {
         padding-left: 145px;
     }
 
-    .icon-right-header{
-        padding-left: 2px;
-    }
     .right-icon span {
         display: none !important
     }
 
     .nav-link {
         padding: 4px !important
+    }
+    .has-search{
+        display: none;
     }
 }
 
@@ -140,35 +125,42 @@ li a {
         max-width: 60px;
         // max-height: 10px;
     }
+
     img {
         content: url("../../assets/logo_copy.png");
     }
-    .icon-right-header{
+
+    .icon-right-header {
         padding-left: 2px;
     }
+
     .right-icon span {
         display: none !important
     }
 
     .icon-right-header ul {
         display: -webkit-inline-box;
-        ;
-
     }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .img-logo {
-        width: 100%;
         height: inherit;
+    }
+
+    .has-search-input {
+        display: unset;
     }
 
     .logo {
         width: 173px;
         height: 46px;
         margin-top: 0;
+        right: 2%;
+        position: relative;
     }
+
     .right-icon span {
         display: unset !important
     }
@@ -178,8 +170,48 @@ li a {
         background-color: white !important;
         height: 80px;
     }
+
     .contact {
         display: none;
     }
-    
+
+
+    .has-search {
+        padding-left: 4rem;
+        width: 27rem;
+        display:unset !important
+    }
+
+    .has-search .form-control {
+        padding-left: 2.375rem;
+        border-radius: 3rem;
+        background-color: #EBEBEB;
+
+    }
+
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+    }
+    li a {
+        font-weight: bold;
+        font-size: 14px
+    }
+    li {
+        margin-right:10px
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        margin-left: 43px;
+    }
+
 }

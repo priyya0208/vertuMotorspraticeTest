@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   collapsed = true;
+  searchmobileView = false;
   toggleCollapsed(): void {
     this.collapsed = !this.collapsed;
+  }
+  openSearchBarMobileView(){
+    this.searchmobileView = !this.searchmobileView;
   }
 }
